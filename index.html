@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Caroline — Off Screen | The Person Behind Brand UpTick</title>
-<meta name="description" content="The personal side of Caroline — school life, leadership, painting, mobile photography, gospel music, and everything outside the portfolio." />
+<meta name="description" content="The personal side of Caroline — founder of Brand UpTick, school life, leadership, painting, mobile photography, gospel music, and everything outside the portfolio." />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,6 +180,11 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
   display:inline-flex; align-items:center; gap:.5rem;
 }
 .pillar i{ color:var(--accent-teal); }
+.pillar.pillar-accent{
+  border-color:rgba(255,179,123,.4);
+  color:var(--text-primary);
+  background:rgba(255,179,123,.08);
+}
 
 /* ============ School life timeline ============ */
 .timeline{ max-width:700px; margin:0 auto; position:relative; padding-left:2rem; }
@@ -309,9 +314,17 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
   .nav-item{ border-bottom:1px solid var(--border); }
   .nav-item:last-child{ border-bottom:none; margin-top:.5rem; }
 }
+@media (max-width:767.98px){
+  .timeline{ padding-left:1.5rem; }
+  .timeline-dot{ left:-1.5rem; }
+  .social-block{ width:88px; }
+  .social-icon{ width:46px; height:46px; font-size:1.05rem; }
+}
 @media (max-width:575.98px){
   .section{ padding:4.5rem 0; }
   .ach-item{ flex-direction:column; align-items:flex-start; gap:.5rem; }
+  .pillar-row{ gap:.5rem; }
+  .pillar{ font-size:.72rem; padding:.45rem .85rem; }
 }
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:.001ms !important; transition-duration:.001ms !important; }
@@ -382,31 +395,36 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
           finally stepping into prefectship. Each of those rooms taught me something different: the band
           taught timing, Guides taught service, drama taught presence, and prefectship taught responsibility.
           That same mix — structure, creativity, and follow-through — is exactly what carries into how I
-          design and build today.
+          design and build today as the founder of Brand UpTick.
         </p>
         <div class="pillar-row">
+          <span class="pillar pillar-accent"><i class="bi bi-rocket-takeoff"></i> Founder, Brand UpTick</span>
           <span class="pillar"><i class="bi bi-flag"></i> Leadership</span>
           <span class="pillar"><i class="bi bi-music-note-beamed"></i> Performing Arts</span>
           <span class="pillar"><i class="bi bi-people"></i> Uniformed Service</span>
           <span class="pillar"><i class="bi bi-mic"></i> Public Speaking</span>
+          <span class="pillar"><i class="bi bi-translate"></i> Trilingual</span>
         </div>
       </div>
     </div>
 
-    <div class="timeline-item" data-reveal>
+    <div class="timeline mt-5 pt-4">
+      <div class="timeline-item" data-reveal>
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h4>Senior Head Prefect <span class="timeline-year">2022 / 2023</span></h4>
           <p>Closed out my school life at the top of student leadership, as Senior Head Prefect.</p>
         </div>
-    </div>
-    <div class="timeline-item" data-reveal>
+      </div>
+      <div class="timeline-item" data-reveal>
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h4>Junior Head Prefect <span class="timeline-year">2019 / 2020</span></h4>
           <p>Took on my first head-of-school leadership role.</p>
         </div>
+      </div>
     </div>
+
     <div class="timeline mt-5 pt-4">
       <div class="timeline-item" data-reveal>
         <div class="timeline-dot"></div>
@@ -425,7 +443,7 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
       <div class="timeline-item" data-reveal>
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <h4>Inniyam Eastern Band (Dawil)<span class="timeline-year">2018</span></h4>
+          <h4>Inniyam Eastern Band (Dawil) <span class="timeline-year">2018</span></h4>
           <p>Performed with the Inniyam Eastern Band playing Dawil instrument.</p>
         </div>
       </div>
@@ -474,7 +492,7 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
           <div class="hobby-links">
             <a href="https://www.facebook.com/share/1cARk2oTUz/" class="hobby-link" aria-label="mobile captures page" title="Melina's Captures FB page"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/melinascaptures?igsh=NTFnYXgzdGYxb3gz" class="hobby-link" aria-label="mobile captures page" title="@melinascaptures IG page"><i class="bi bi-instagram"></i></a>
-        </div>
+          </div>
         </div>
       </div>
 
@@ -493,7 +511,7 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
 </section>
 
 <!-- ===== Recognition ===== -->
-<!--<section id="recognition" class="section">
+<section id="recognition" class="section">
   <div class="container">
     <p class="section-eyebrow text-center" data-reveal>03 — Recognition</p>
     <h2 class="section-title text-center mb-5" data-reveal>A decade of showing up</h2>
@@ -502,43 +520,19 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
       <div class="col-lg-9">
 
         <div class="ach-group" data-reveal>
-          <h3 class="ach-group-title"><i class="bi bi-flag-fill"></i> Leadership &amp; Uniformed Service</h3>
-          <ul class="ach-list">
-            <li class="ach-item"><span class="ach-name">Senior Head Prefect</span><span class="ach-meta"><span class="ach-year">2022/2023</span></span></li>
-            <li class="ach-item"><span class="ach-name">Junior Head Prefect</span><span class="ach-meta"><span class="ach-year">2019/2020</span></span></li>
-            <li class="ach-item"><span class="ach-name">Junior Band — Leader</span><span class="ach-meta"><span class="ach-year">2013/2014</span></span></li>
-            <li class="ach-item"><span class="ach-name">Sri Lanka Girl Guides Association</span><span class="ach-meta"><span class="ach-year">2015–2018</span></span></li>
-            <li class="ach-item"><span class="ach-name">Jumbo 17 National Camp</span><span class="ach-meta"><span class="ach-year">2017</span></span></li>
-            <li class="ach-item"><span class="ach-name">100th Year Girl Guides Rally</span><span class="ach-meta"><span class="ach-year">2017</span></span></li>
-            <li class="ach-item"><span class="ach-name">Inniyam Eastern Band (Dawil)</span><span class="ach-meta"><span class="ach-year">2018</span></span></li>
-            <li class="ach-item"><span class="ach-name">Korean Cultural Festival &amp; K-pop Festival Competition</span><span class="ach-meta"><span class="ach-year">2018</span></span></li>   
-          </ul>
-        </div>-->
-
-        <div class="ach-group" data-reveal>
-          <h3 class="ach-group-title"><i class="bi bi-mic-fill"></i>Recognition in Performing Arts &amp; Literary</h3>
+          <h3 class="ach-group-title"><i class="bi bi-mic-fill"></i> Performing Arts &amp; Literary</h3>
           <ul class="ach-list">
             <li class="ach-item"><span class="ach-name">Sri Lanka Festival of Music, Dance &amp; Speech — first stage, first national award</span><span class="ach-meta"><span class="ach-place place-best">All-Island Winner</span><span class="ach-year">2009</span></span></li>
-           <!-- <li class="ach-item"><span class="ach-name">Recitation — Provincial</span><span class="ach-meta"><span class="ach-place place-3">3rd</span><span class="ach-year">2012</span></span></li>
-            <li class="ach-item"><span class="ach-name">Reading Aloud — Provincial</span><span class="ach-meta"><span class="ach-place place-3">3rd</span><span class="ach-year">2012</span></span></li>
-            <li class="ach-item"><span class="ach-name">Recitation — Provincial</span><span class="ach-meta"><span class="ach-place place-1">1st</span><span class="ach-year">2013</span></span></li>
-            <li class="ach-item"><span class="ach-name">Reading Aloud — Provincial</span><span class="ach-meta"><span class="ach-place place-2">2nd</span><span class="ach-year">2013</span></span></li>
-            <li class="ach-item"><span class="ach-name">Sinhala Group Song — Provincial</span><span class="ach-meta"><span class="ach-place place-1">1st</span><span class="ach-year">2015</span></span></li>
-            <li class="ach-item"><span class="ach-name">English Roleplay — Provincial</span><span class="ach-meta"><span class="ach-place place-1">1st</span><span class="ach-year">2015</span></span></li>
-            <li class="ach-item"><span class="ach-name">English Roleplay — Provincial</span><span class="ach-meta"><span class="ach-place place-3">3rd</span><span class="ach-year">2016</span></span></li>
-            <li class="ach-item"><span class="ach-name">Sinhala Group Song — Provincial</span><span class="ach-meta"><span class="ach-place place-1">1st</span><span class="ach-year">2017</span></span></li> 
-            <li class="ach-item"><span class="ach-name">English Dictation — Provincial</span><span class="ach-meta"><span class="ach-place place-2">2nd</span><span class="ach-year">2023</span></span></li>-->
             <li class="ach-item"><span class="ach-name">State Children's Drama Festival — State Best Drama Actor</span><span class="ach-meta"><span class="ach-place place-best">Best Actor</span><span class="ach-year">2015</span></span></li>
             <li class="ach-item"><span class="ach-name">Royal College Drama Festival — Solo Acting</span><span class="ach-meta"><span class="ach-place place-best">Best Actor</span><span class="ach-year">2017</span></span></li>
-            <!--<li class="ach-item"><span class="ach-name">Senior Poetic Drama — Main Character (King Lear), Provincial</span><span class="ach-meta"><span class="ach-place place-1">1st</span><span class="ach-year">2022</span></span></li>-->
-            <li class="ach-item"><span class="ach-name">Several Provincial places in both Sinhala & English Solo/Group events</span><span class="ach-meta"><span class="ach-place place-2"></span><span class="ach-year">2012-2023</span></span></li>
+            <li class="ach-item"><span class="ach-name">Several Provincial places in both Sinhala &amp; English Solo/Group events</span><span class="ach-meta"><span class="ach-year">2012–2023</span></span></li>
           </ul>
         </div>
 
         <div class="ach-group" data-reveal>
           <h3 class="ach-group-title"><i class="bi bi-trophy-fill"></i> Sports</h3>
           <ul class="ach-list">
-            <li class="ach-item"><span class="ach-name">Badminton— Provincial, 2nd Runner-Up</span><span class="ach-meta"><span class="ach-year">2022</span></span></li>
+            <li class="ach-item"><span class="ach-name">Badminton — Provincial, 2nd Runner-Up</span><span class="ach-meta"><span class="ach-year">2022</span></span></li>
           </ul>
         </div>
 
@@ -558,15 +552,7 @@ h1,h2,h3,h4{ font-family:var(--font-display); letter-spacing:-0.01em; }
           Brand UpTick is my work. These are more me — personal life, art, and music.
         </p>
 
-        <!--<div class="social-row">
-          <div class="social-block">
-            <a href="https://www.facebook.com/profile.php?id=61585948914926&mibextid=ZbWKwL" class="social-icon" aria-label="Melina Caroline FB" title="Melina Caroline"><i class="bi bi-facebook"></i></a>
-            <span class="social-label">Personal FB</span>
-          </div>
-          <div class="social-block">
-            <a href="#" class="social-icon" aria-label="Personal Instagram" title="Melina caroline IG"><i class="bi bi-instagram"></i></a>
-            <span class="social-label">Personal IG</span>-->
-          </div>
+        <div class="social-row">
           <div class="social-block">
             <a href="https://www.facebook.com/share/1cS7ntc22k/" class="social-icon" aria-label="Art Facebook page" title="Melina's art gallery FB page"><i class="bi bi-palette2"></i></a>
             <span class="social-label">Art FB Page</span>
